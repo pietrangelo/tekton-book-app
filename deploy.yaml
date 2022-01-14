@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: tekton-pod
-        image: <YOUR_USERNAME>/tekton-lab-app
+        image: pmasala/tekton-lab-app
         ports:
         - containerPort: 3000
 ---
@@ -41,6 +41,6 @@ spec:
         backend:
           service:
             name: tekton-svc
-            port: 
+            port:
               number: 3000
 
